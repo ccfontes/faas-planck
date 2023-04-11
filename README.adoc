@@ -30,7 +30,7 @@ Create Planck Functions as with the following command example:
 ----
 faas new --lang planck my-planck-function
 ----
-A new project is created for a function defined as `my-planck-function`. It will contain a `function.handler` namespace that is required for the template to work properly. The requirement for this namespace is to have a top-level function defined as `handler`.
+A new project is created for a function defined as `my-planck-function`. It will contain an `fn.handler` namespace that is required for the template to work properly. The requirement for this namespace is to have a top-level function defined as `handler`.
 
 == Specs ==
 
