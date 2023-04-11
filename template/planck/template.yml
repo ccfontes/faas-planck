@@ -1,0 +1,4 @@
+language: planck
+fprocess: ./index.cljs
+welcome_message: |
+  You have created a new function which uses Planck version 2.27.0

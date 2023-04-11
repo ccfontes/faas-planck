@@ -1,0 +1,55 @@
+:url-proj: https://github.com/ccfontes/faas-planck
+:img-ci-tests-status: {url-proj}/actions/workflows/faas_fn_build_invoke.yml/badge.svg
+:img-ci-hadolint-status: {url-proj}/actions/workflows/hadolint.yml/badge.svg
+:url-ci-status: "{url-proj}/actions"
+:img-license: https://img.shields.io/badge/license-MIT-black.svg
+
+= OpenFaaS Idris 2 template image:{img-ci-tests-status}[link={url-ci-status}] image:{img-ci-hadolint-status}[link={url-ci-status}] image:{img-license}[link=LICENSE] =
+
+An https://github.com/openfaas[OpenFaaS] template for writing Functions in https://planck-repl.org/[Planck].
+
+== Prerequisites ==
+
+* https://docs.openfaas.com/cli/install/[OpenFaaS CLI]: makes the `faas` command available.
+
+== Usage ==
+
+=== Pull OpenFaaS template ===
+
+To create Planck Functions with this template, use the following command *once*:
+[source, bash]
+----
+faas template pull https://github.com/ccfontes/faas-idris2
+----
+If you ever need to update the template, simply run the command above with the `--overwrite` flag.
+
+=== Create an Idris 2 Function ===
+
+Create Planck Functions as with the following command example:
+[source, bash]
+----
+faas new --lang planck my-planck-function
+----
+A new project is created for a function defined as `my-planck-function`. It will contain a `function.handler` namespace that is required for the template to work properly. The requirement for this namespace is to have a top-level function defined as `handler`.
+
+== Specs ==
+
+OpenFaaS watchdog is `of-watchdog` in https://github.com/openfaas/of-watchdog#3-streaming-fork-modestreaming---default[Streaming fork] mode.
+
+== link:function-examples[Function examples] ==
+
+See the link:function-examples[function-examples] directory to find a fully working set of OpenFaaS Functions written in Planck.
+
+== Tests ==
+
+Tests run in CI with Github Actions. Some commands link:.github/workflows/faas_fn_build_invoke.yml[can be found in a Github Actions workflow] to help you with testing your changes before pushing them to a topic branch.
+
+== Contributing ==
+
+Contributions are welcome! If you find a bug or have an idea for a new feature, please open an issue or submit a pull request.
+
+== link:LICENSE[License] ==
+
+Copyright (c) 2023 Carlos da Cunha Fontes
+
+The MIT License

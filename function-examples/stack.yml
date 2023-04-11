@@ -1,0 +1,13 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  planck-hello:
+    lang: planck
+    handler: ./planck_hello
+    image: ${DOCKER_REGISTRY_IMG_ORG_PATH}/planck-hello
+  planck-lib:
+    lang: planck
+    handler: ./planck_lib
+    image: ${DOCKER_REGISTRY_IMG_ORG_PATH}/planck-lib
