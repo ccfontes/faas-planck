@@ -5,5 +5,5 @@ provider:
 functions:
   planck-hello:
     lang: planck
-    handler: ./planck_hello
+    handler: ./planck-hello
     image: ${DOCKER_REGISTRY_IMG_ORG_PATH}/planck-hello
