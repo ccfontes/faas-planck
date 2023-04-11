@@ -1,4 +1,4 @@
-= OpenFaaS Functions in Idris 2 =
+= OpenFaaS Functions in Planck =
 
 Hello world OpenFaaS Function in Planck.
 

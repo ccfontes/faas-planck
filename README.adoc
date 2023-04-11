@@ -4,7 +4,7 @@
 :url-ci-status: "{url-proj}/actions"
 :img-license: https://img.shields.io/badge/license-MIT-black.svg
 
-= OpenFaaS Idris 2 template image:{img-ci-tests-status}[link={url-ci-status}] image:{img-ci-hadolint-status}[link={url-ci-status}] image:{img-license}[link=LICENSE] =
+= OpenFaaS Planck template image:{img-ci-tests-status}[link={url-ci-status}] image:{img-ci-hadolint-status}[link={url-ci-status}] image:{img-license}[link=LICENSE] =
 
 An https://github.com/openfaas[OpenFaaS] template for writing Functions in https://planck-repl.org/[Planck].
 
@@ -19,11 +19,11 @@ An https://github.com/openfaas[OpenFaaS] template for writing Functions in https
 To create Planck Functions with this template, use the following command *once*:
 [source, bash]
 ----
-faas template pull https://github.com/ccfontes/faas-idris2
+faas template pull https://github.com/ccfontes/faas-planck
 ----
 If you ever need to update the template, simply run the command above with the `--overwrite` flag.
 
-=== Create an Idris 2 Function ===
+=== Create a Planck Function ===
 
 Create Planck Functions as with the following command example:
 [source, bash]

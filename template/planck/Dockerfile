@@ -13,8 +13,8 @@ FROM ghcr.io/openfaas/of-watchdog:0.9.11 AS watchdog
 
 FROM debian:9.0
 RUN apt-get update && \
-    apt-get install --yes curl=7.52.1-5+deb9u16 libcurl3-gnutls=7.52.1-5+deb9u16 libzip4=1.1.2-1.1+deb9u1 libjavascriptcoregtk-4.0-18=2.18.6-1~deb9u1 && \
-    curl -o planck https://planck-repl.org/releases/2.25.0-debian-9.0-x86_64/planck && \
+    apt-get install --yes --no-install-recommends curl=7.52.1-5+deb9u16 libcurl3-gnutls=7.52.1-5+deb9u16 libzip4=1.1.2-1.1+deb9u1 libjavascriptcoregtk-4.0-18=2.18.6-1~deb9u1 && \
+    curl -o planck --insecure https://planck-repl.org/releases/2.25.0-debian-9.0-x86_64/planck && \
     apt-get remove --yes curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
