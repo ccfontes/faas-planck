@@ -2,7 +2,7 @@
 
 Hello world OpenFaaS Function in Planck.
 
-See the `planck_` prefixed directories to find the planck Function code examples.
+See the `planck-` prefixed directories to find the planck Function code examples.
 
 The following documentation explains how to run these Functions in OpenFaaS.
 
@@ -15,7 +15,7 @@ See https://docs.openfaas.com/tutorials/first-python-function/[OpenFaaS website]
 
 == Get OpenFaaS template ==
 
-Get the Idris 2 OpenFaaS template:
+Get the Planck OpenFaaS template:
 [source, bash]
 ----
 faas template pull https://github.com/ccfontes/faas-planck

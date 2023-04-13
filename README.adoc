@@ -1,10 +1,18 @@
 :url-proj: https://github.com/ccfontes/faas-planck
 :img-ci-tests-status: {url-proj}/actions/workflows/faas_fn_build_invoke.yml/badge.svg
 :img-ci-hadolint-status: {url-proj}/actions/workflows/hadolint.yml/badge.svg
-:url-ci-status: "{url-proj}/actions"
+:img-ci-clj-kondo-status: {url-proj}/actions/workflows/clj-kondo.yml/badge.svg
+:url-ci-status-tests: "{url-proj}/actions/workflows/faas_fn_build_invoke.yml"
+:url-ci-status-hadolint: "{url-proj}/actions/workflows/hadolint.yml"
+:url-ci-status-clj-kondo: "{url-proj}/actions/workflows/clj-kondo.yml"
 :img-license: https://img.shields.io/badge/license-MIT-black.svg
 
-= OpenFaaS Planck template image:{img-ci-tests-status}[link={url-ci-status}] image:{img-ci-hadolint-status}[link={url-ci-status}] image:{img-license}[link=LICENSE] =
+= OpenFaaS Babashka template =
+
+image:{img-ci-tests-status}[link={url-ci-status-tests}]
+image:{img-ci-hadolint-status}[link={url-ci-status-hadolint}]
+image:{img-ci-clj-kondo-status}[link={url-ci-status-clj-kondo}]
+image:{img-license}[link=LICENSE]
 
 An https://github.com/openfaas[OpenFaaS] template for writing Functions in https://planck-repl.org/[Planck].
 
@@ -36,9 +44,9 @@ A new project is created for a function defined as `my-planck-function`. It will
 
 OpenFaaS watchdog is `of-watchdog` in https://github.com/openfaas/of-watchdog#3-streaming-fork-modestreaming---default[Streaming fork] mode.
 
-== link:function-examples[Function examples] ==
+== link:examples[Function examples] ==
 
-See the link:function-examples[function-examples] directory to find a fully working set of OpenFaaS Functions written in Planck.
+See the link:examples[examples] directory to find a fully working set of OpenFaaS Functions written in Planck.
 
 == Tests ==
 
