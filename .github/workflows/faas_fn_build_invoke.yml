@@ -29,7 +29,7 @@ jobs:
           DOCKER_REGISTRY_IMG_ORG_PATH: ghcr.io/${{ github.repository_owner }}
         run: |
           git clone https://github.com/${{ github.repository_owner }}/faas-planck.git
-          cd faas-planck/function-examples
+          cd faas-planck/examples
           git checkout ${{ github.head_ref || github.ref_name }}
           faas template pull https://github.com/${{ github.repository_owner }}/faas-planck#${{ github.head_ref || github.ref_name }}
           faas build

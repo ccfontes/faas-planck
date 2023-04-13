@@ -7,3 +7,7 @@ functions:
     lang: planck
     handler: ./planck-hello
     image: ${DOCKER_REGISTRY_IMG_ORG_PATH}/planck-hello
+  planck-lib:
+    lang: planck
+    handler: ./planck-lib
+    image: ${DOCKER_REGISTRY_IMG_ORG_PATH}/planck-lib
